@@ -12,10 +12,12 @@
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
+      <OutputPath>bin\Debug\</OutputPath>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|x64">
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
+      <OutputPath>bin\Release\</OutputPath>
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
