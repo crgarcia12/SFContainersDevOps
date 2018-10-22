@@ -20,7 +20,11 @@
                                     AzureActiveDirectory="true"
                                     ServerCertThumbprint="0123456789012345678901234567890123456789" />
   -->
-  <ClusterConnectionParameters ConnectionEndpoint="" />
+  <ClusterConnectionParameters ConnectionEndpoint="sfdevops-dev.westeurope.cloudapp.azure.com:19000" X509Credential="true" ServerCertThumbprint="91C3B1C53408A5F6E7F9E4DE4E91C9D46829E7B3" FindType="FindByThumbprint" FindValue="91C3B1C53408A5F6E7F9E4DE4E91C9D46829E7B3" StoreLocation="CurrentUser" StoreName="My" />
   <ApplicationParameterFile Path="..\ApplicationParameters\Cloud.xml" />
   <CopyPackageParameters CompressPackage="true" />
+  <ContainerRegistryParameters Server="sfdevopsregistry.azurecr.io" RegistryName="SFDevOpsRegistry" UserName="SFDevOpsRegistry" />
+  <UpgradeDeployment Mode="Monitored" Enabled="true">
+    <Parameters FailureAction="Rollback" Force="True" />
+  </UpgradeDeployment>
 </PublishProfile>
