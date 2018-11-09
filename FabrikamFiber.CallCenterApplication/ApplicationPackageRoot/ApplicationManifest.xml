@@ -11,6 +11,7 @@
     <ServiceManifestRef ServiceManifestName="FabrikamFiber.WebPkg" ServiceManifestVersion="1.0.0" />
     <Policies>
       <ContainerHostPolicies CodePackageRef="Code" Isolation="[FabrikamFiber.Web_Isolation]">
+        <RepositoryCredentials AccountName="SFDevOpsRegistry" Password="PUM3CVACZ7VnYCQ4tuIo+O70plJNzlbs" PasswordEncrypted="false"/>
         <PortBinding ContainerPort="80" EndpointRef="FabrikamFiber.WebTypeEndpoint" />
       </ContainerHostPolicies>
     </Policies>
